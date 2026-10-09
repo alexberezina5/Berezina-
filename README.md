@@ -53,13 +53,13 @@ pip install -r requirements.txt
 Загрузи модель:
 ollama pull qwen2.5:3b
 Убедись, что Ollama запущена и модель доступна.
-3. Настройте Telegram-бота.
+3. Настрой Telegram-бота.
 Создай бота через @BotFather и получите токен.
 В корне проекта создайте файл .env:
 BOT_TOKEN=your_telegram_bot_token
 MODEL=qwen2.5:3b
 OLLAMA_BASE_URL=http://127.0.0.1:11434/v1
-Замените your_telegram_bot_token на настоящий токен.
+Замени your_telegram_bot_token на настоящий токен.
 4. Запусти бота.
 python main.py
 После запуска открой Telegram, найди своего бота и отправь команду /start.
@@ -71,5 +71,5 @@ docker compose logs -f telegram-bot
 При первом запуске может потребоваться время на загрузку модели.
 При запуске через Docker адрес Ollama должен указывать на сервис внутри Docker-сети, например http://ollama:11434/v1.
 
-Используйте .env.example с демонстрационными значениями.
-Не открывайте порт Ollama в интернет без необходимости.
+Используй .env.example с демонстрационными значениями.
+Не открывай порт Ollama в интернет без необходимости.
